@@ -5,8 +5,8 @@ import {
   HttpCode,
   HttpStatus,
   Request,
+  UseGuards,
 } from '@nestjs/common';
-import { UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../modules/auth/jwt-auth.guard';
 import { UsersService } from '../modules/users/users.service';
 import { UpdateUserDto } from '../modules/users/dto/updateUser.dto';
