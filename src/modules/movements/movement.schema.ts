@@ -6,6 +6,9 @@ export type MovementDocument = HydratedDocument<Movement>;
 @Schema()
 export class Movement {
   @Prop({ required: true })
+  userId: string;
+
+  @Prop({ required: true })
   type: 'income' | 'expense';
 
   @Prop({ required: true })
